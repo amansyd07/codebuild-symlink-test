@@ -8,20 +8,20 @@ phases:
       - echo "Install phase started at $(date)"
       - echo "Node version: $(node --version)"
       - echo "NPM version: $(npm --version)"
-      
+
   pre_build:
     commands:
       - echo "Pre-build phase started at $(date)"
       - echo "Installing dependencies..."
       - npm install
       - echo "Dependencies installed successfully"
-      
+
   build:
     commands:
       - echo "Build phase started at $(date)"
       - npm run build
       - echo "Build completed successfully"
-      
+
   post_build:
     commands:
       - echo "Post-build phase started at $(date)"
